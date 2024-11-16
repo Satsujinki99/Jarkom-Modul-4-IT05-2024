@@ -1,9 +1,9 @@
 # Jarkom-Modul-4-IT05-2024
 
-| Nama | NRP |
-| ---- | :-: |
-| Adlya Isriena Aftarisya | 5027231066 |
-| Furqon Aryadana | 5027231024 |
+| Nama | NRP | Aplikasi | Metode |
+| ---- | :-: | -------- | ------ |
+| Adlya Isriena Aftarisya | 5027231066 | GNS3 | CIDR |
+| Furqon Aryadana | 5027231024 | CPT | VLSM |
 
 ## CIDR (GNS)
 ### Topologi
