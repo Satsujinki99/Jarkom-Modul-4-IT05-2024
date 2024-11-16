@@ -454,14 +454,14 @@ iface eth1 inet static
     netmask 255.255.255.252
 
 #A9
-auto eth2
-iface eth2 inet static
+auto eth3
+iface eth3 inet static
     address 10.66.64.1
     netmask 255.255.255.252
 
 #A10
-auto eth3
-iface eth3 inet static
+auto eth2
+iface eth2 inet static
     address 10.66.160.1
     netmask 255.255.255.252
 ```
@@ -472,21 +472,183 @@ auto lo
 iface lo inet loopback
 
 #A8
-auto eth1
-iface eth1 inet static
+auto eth0
+iface eth0 inet static
     address 10.67.16.2
     netmask 255.255.255.252
     gateway 10.67.16.1
 
 #A7
-auto eth1
-iface eth1 inet static
+auto eth2
+iface eth2 inet static
     address 10.67.8.33
     netmask 255.255.255.252
 
 #A5
-auto eth2
-iface eth2 inet static
+auto eth1
+iface eth1 inet static
     address 10.67.4.1
     netmask 255.255.255.252
 ```
+
+#### Holo-Myth
+```
+auto lo
+iface lo inet loopback
+
+#A5
+auto eth0
+iface eth0 inet static
+    address 10.67.4.2
+    netmask 255.255.255.252
+    gateway 10.67.4.1
+
+#A6
+auto eth1
+iface eth1 inet static
+    address 10.67.0.1
+    netmask 255.255.254.0
+
+#A2
+auto eth2
+iface eth2 inet static
+    address 10.67.2.129
+    netmask 255.255.255.248
+```
+
+#### Gura_Ame_Ina (Client)
+```
+#A6
+auto eth0
+iface eth0 inet static
+    address 10.67.0.2
+    netmask 255.255.254.0
+    gateway 10.67.0.1
+```
+#### Kiara_Caili (Client)
+```
+#A6
+auto eth0
+iface eth0 inet static
+    address 10.67.0.3
+    netmask 255.255.254.0
+    gateway 10.67.0.1
+```
+
+#### HoloAdvent
+```
+auto lo
+iface lo inet loopback
+
+#A7
+auto eth0
+iface eth0 inet static
+    address 10.67.8.34
+    netmask 255.255.255.252
+    gateway 10.67.8.33
+
+#A4
+auto eth1
+iface eth1 inet static
+    address 10.67.8.1
+    netmask 255.255.255.224
+```
+
+#### FuwaMoco (Client)
+```
+#A4
+auto eth0
+iface eth0 inet static
+    address 10.67.8.2
+    netmask 255.255.255.224
+    gateway 10.67.8.1
+```
+
+#### Shiori_Nerissa (Client)
+```
+#A4
+auto eth0
+iface eth0 inet static
+    address 10.67.8.3
+    netmask 255.255.255.224
+    gateway 10.67.8.1
+```
+
+#### Biboo (Client)
+```
+#A4
+auto eth0
+iface eth0 inet static
+    address 10.67.8.4
+    netmask 255.255.255.224
+    gateway 10.67.8.1
+```
+
+#### Project-Hope
+```
+auto lo
+iface lo inet loopback
+
+#A2
+auto eth0
+iface eth0 inet static
+    address 10.67.2.130
+    netmask 255.255.255.248
+    gateway 10.67.2.129
+
+#A3
+auto eth1
+iface eth1 inet static
+    address 10.67.2.64
+    netmask 255.255.255.252
+```
+
+#### Irys (Client)
+```
+#A3
+auto eth0
+iface eth0 inet static
+    address 10.67.2.65
+    netmask 255.255.255.252
+    gateway 10.67.2.64
+```
+
+#### Holo-Council
+```
+auto lo
+iface lo inet loopback
+
+#A2
+auto eth0
+iface eth0 inet static
+    address 10.67.2.131
+    netmask 255.255.255.248
+    gateway 10.67.2.129
+
+#A1
+auto eth1
+iface eth1 inet static
+    address 10.67.2.1
+    netmask 255.255.255.248
+```
+
+#### Kronii_Mumei (Client)
+```
+#A1
+auto eth0
+iface eth0 inet static
+    address 10.67.2.2
+    netmask 255.255.255.248
+    gateway 10.67.2.1
+```
+
+#### Bae_Fauna (Client)
+```
+#A1
+auto eth0
+iface eth0 inet static
+    address 10.67.2.3
+    netmask 255.255.255.248
+    gateway 10.67.2.1
+```
+
