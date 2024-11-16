@@ -437,3 +437,56 @@ Prefix IP : **10.66**
 | A20    | 10.66.8.0      | 255.255.254.0   | 10.66.9.255    | 10.66.8.1 - 10.66.9.254         |
 | A21    | 10.66.10.128   | 255.255.255.252 | 10.66.10.131   | 10.66.10.129 - 10.66.10.130     |
 | A22    | 10.66.10.0     | 255.255.255.128 | 10.66.10.127   | 10.66.10.1 - 10.66.10.126       |
+
+### Network Configuration
+#### Hololive
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0  inet dhcp
+
+#A8
+auto eth1
+iface eth1 inet static
+    address 10.67.16.1
+    netmask 255.255.255.252
+
+#A9
+auto eth2
+iface eth2 inet static
+    address 10.66.64.1
+    netmask 255.255.255.252
+
+#A10
+auto eth3
+iface eth3 inet static
+    address 10.66.160.1
+    netmask 255.255.255.252
+```
+
+#### Holo-EN
+```
+auto lo
+iface lo inet loopback
+
+#A8
+auto eth1
+iface eth1 inet static
+    address 10.67.16.2
+    netmask 255.255.255.252
+    gateway 10.67.16.1
+
+#A7
+auto eth1
+iface eth1 inet static
+    address 10.67.8.33
+    netmask 255.255.255.252
+
+#A5
+auto eth2
+iface eth2 inet static
+    address 10.67.4.1
+    netmask 255.255.255.252
+```
