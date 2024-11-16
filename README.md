@@ -339,3 +339,36 @@
     </tr>
   </tbody>
 </table>
+
+#### Langkah 9
+<img width="762" alt="image" src="https://github.com/user-attachments/assets/be824aab-4aa8-4c04-8c2c-2ba7dbd192ad">
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subnet</th>
+      <th colspan="4">Gabungan dari</th>
+      <th rowspan="3">Netmask Akhir</th>
+    </tr>
+    <tr>
+      <th colspan="2">1</th>
+	  <th colspan="2">2</th>
+    </tr>
+	<tr>
+	<th>Subnet</th>
+      <th>Netmask</th>
+      <th>Subnet</th>
+      <th>Netmask</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I1</td>
+      <td>H2</td>
+      <td>/18</td>
+      <td>H3</td>
+      <td>/17</td>
+      <td>/16</td>
+    </tr>
+  </tbody>
+</table>
