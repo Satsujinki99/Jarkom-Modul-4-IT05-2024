@@ -852,6 +852,44 @@ iface eth0 inet static
     gateway 10.66.10.1
 ```
 
+### Routing
+#### Hololive
+```
+#KIRI
+post-up route add -net 10.67.16.0 netmask 255.255.255.252 gw 10.67.16.2 #A8
+post-up route add -net 10.67.4.0 netmask 255.255.255.252 gw 10.67.16.2 #A5
+post-up route add -net 10.67.0.0 netmask 255.255.254.0 gw 10.67.16.2 #A6
+post-up route add -net 10.67.2.64 netmask 255.255.255.252 gw 10.67.16.2 #A3
+post-up route add -net 10.67.2.128 netmask 255.255.255.252 gw 10.67.16.2 #A2
+post-up route add -net 10.67.2.0 netmask 255.255.255.192 gw 10.67.16.2 #A1
+post-up route add -net 10.67.8.32 netmask 255.255.255.252 gw 10.67.16.2 #A7
+post-up route add -net 10.67.8.0 netmask 255.255.255.224 gw 10.67.16.2 #A4
+```
+#### Holo-EN
+```
+post-up route add -net 10.67.0.0 netmask 255.255.254.0 gw 10.67.4.2 #A6
+post-up route add -net 10.67.2.128 netmask 255.255.255.248 gw 10.67.4.2 #A2
+post-up route add -net 10.67.2.64 netmask 255.255.255.252 gw 10.67.4.2 #A3
+post-up route add -net 10.67.2.0 netmask 255.255.255.192 gw 10.67.4.2 #A1
+post-up route add -net 10.67.8.0 netmask 255.255.255.224 gw 10.67.8.34 #A4
+```
+#### Holo-Myth
+```
+post-up route add -net 10.67.16.0 netmask 255.255.255.252 gw 10.67.4.1 #A8
+post-up route add -net 10.67.2.64 netmask 255.255.255.252 gw 10.67.2.130 #A3
+post-up route add -net 10.67.2.0 netmask 255.255.255.192 gw 10.67.2.131 #A1
+```
+#### Holo-Council & Project-Hope
+```
+post-up route add -net 10.67.16.0 netmask 255.255.255.252 gw 10.67.2.129 #A8
+post-up route add -net 10.67.4.0 netmask 255.255.255.252 gw 10.67.2.129 #A5
+post-up route add -net 10.67.0.0 netmask 255.255.254.0 gw 10.67.2.129 #A6
+```
+#### HoloAdvent
+```
+post-up route add -net 10.67.16.0 netmask 255.255.255.252 gw 10.67.8.33 #A8
+```
+
 
 
 
