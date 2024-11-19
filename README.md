@@ -851,3 +851,137 @@ iface eth0 inet static
     netmask 255.255.255.128
     gateway 10.66.10.1
 ```
+
+
+
+
+## CPT (VLSM)
+### Topologi
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/69c0de7a-91c3-460c-9a41-d6a4210e3e53">
+
+
+### Tree VLSM
+![pohon vlsm drawio (1)](https://github.com/user-attachments/assets/7165273e-7595-47f6-9b34-114ac4076b5f)
+
+
+### Pembagian IP
+<img width="532" alt="image" src="https://github.com/user-attachments/assets/2a8ece76-b6b1-4fbd-8154-ded98ef96986">
+
+
+### Subnet A1
+### Hololive
+```
+enable
+configure terminal
+interface fa1/0
+ip address 10.66.19.73 255.255.255.252
+no shutdown
+```
+
+### Holo-ID
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.74 255.255.255.252
+no shutdown
+```
+
+### Subnet A2
+### Holo-ID
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.93 255.255.255.252
+no shutdown
+```
+### AREA15
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.94 255.255.255.252
+no shutdown
+```
+
+### Subnet A3
+### AREA15
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.8.1 255.255.252.0
+no shutdown
+```
+### Moona
+```
+Dekstop IP Configuration
+IP Address: 10.66.8.2
+Subnet Mask: 255.255.252.0
+Gateway: 10.66.8.1
+```
+### Risu
+```
+Dekstop IP Configuration
+IP Address: 10.66.8.3
+Subnet Mask: 255.255.252.0
+Gateway: 10.66.8.1
+```
+### lofi
+```
+Dekstop IP Configuration
+IP Address: 10.66.8.4
+Subnet Mask: 255.255.252.0
+Gateway: 10.66.8.1
+```
+
+### Subnet A4
+### Holo-ID
+```
+enable
+configure terminal
+interface fa1/0
+ip address 10.66.19.97 255.255.255.252
+no shutdown
+```
+### holoro
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.98 255.255.255.252
+no shutdown
+```
+
+### Subnet A5
+### holoro
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.18.193 255.255.255.192
+no shutdown
+```
+### Ollie
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.194
+Subnet Mask: 255.255.255.192
+Gateway: 10.66.18.193
+```
+### Anya
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.195
+Subnet Mask: 255.255.255.192
+Gateway: 10.66.18.193
+```
+### Reine
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.196
+Subnet Mask: 255.255.255.192
+Gateway: 10.66.18.193
+```
+
