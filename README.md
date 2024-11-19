@@ -985,3 +985,95 @@ Subnet Mask: 255.255.255.192
 Gateway: 10.66.18.193
 ```
 
+### Subnet A6
+### Holo-ID
+```
+enable
+configure terminal
+interface fa1/1
+ip address 10.66.19.101 255.255.255.252
+no shutdown
+```
+### holoh3ro
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.102 255.255.255.252
+no shutdown
+```
+
+### Subnet A7
+### holoh3ro
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.16.1 255.255.254.0
+no shutdown
+```
+### Zeta
+```
+Dekstop IP Configuration
+IP Address: 10.66.16.2
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.16.1
+```
+### Kaela 
+```
+Dekstop IP Configuration
+IP Address: 10.66.16.3
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.16.1
+```
+### Kobo 
+```
+Dekstop IP Configuration
+IP Address: 10.66.16.4
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.16.1
+```
+
+### Subnet A8
+### Hololive
+```
+enable
+configure terminal
+interface fa1/1
+ip address 10.66.19.105 255.255.255.252
+no shutdown
+```
+### HoloJP
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.106 255.255.255.252
+no shutdown
+```
+
+### Subnet A9
+### HoloJP
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.65 255.255.255.248
+no shutdown
+```
+### DEV_IS
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.66 255.255.255.248
+no shutdown
+```
+### GEN:0 
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.67 255.255.255.248
+no shutdown
+```
