@@ -1141,3 +1141,94 @@ Subnet Mask: 255.255.248.0
 Gateway: 10.66.0.1
 ```
 
+### Subnet A12
+### GEN:1
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.14.1 255.255.254.0
+no shutdown
+```
+### FBK_Matsuri
+```
+Dekstop IP Configuration
+IP Address: 10.66.14.2
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.14.2
+```
+### Aki_Hachama
+```
+Dekstop IP Configuration
+IP Address: 10.66.14.3
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.14.2
+```
+
+### Subnet A13
+### GEN:1
+```
+enable
+configure terminal
+interface fa1/0
+ip address 10.66.19.77 255.255.255.252
+no shutdown
+```
+### GAMERS
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.78 255.255.255.252
+no shutdown
+```
+
+### Subnet A14
+### GAMERS
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.18.1 255.255.255.128
+no shutdown
+```
+### Kerone 
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.2
+Subnet Mask: 255.255.255.128
+Gateway: 10.66.18.1
+```
+### Okayu
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.3
+Subnet Mask: 255.255.255.128
+Gateway: 10.66.18.1
+```
+### Mio
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.4
+Subnet Mask: 255.255.255.128
+Gateway: 10.66.18.1
+```
+
+### Subnet A15
+### Hololive
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.81 255.255.255.252
+no shutdown
+```
+### Hololive
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.82 255.255.255.252
+no shutdown
+```
+
