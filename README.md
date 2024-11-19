@@ -1077,3 +1077,67 @@ interface fa0/0
 ip address 10.66.19.67 255.255.255.248
 no shutdown
 ```
+
+### Subnet A10
+### DEV_IS
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.33 255.255.255.240
+no shutdown
+```
+### Ririka_Rade
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.34
+Subnet Mask: 255.255.255.240
+Gateway: 10.66.19.33
+```
+### Ao
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.35
+Subnet Mask: 255.255.255.240
+Gateway: 10.66.19.33
+```
+### Hajime_Kanade
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.36
+Subnet Mask: 255.255.255.240
+Gateway: 10.66.19.33
+```
+
+### Subnet A11
+### GEN:0
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.0.1 255.255.248.0
+no shutdown
+```
+### GEN:1
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.0.2 255.255.248.0
+no shutdown
+```
+### MiComet
+```
+Dekstop IP Configuration
+IP Address: 10.66.0.3
+Subnet Mask: 255.255.248.0
+Gateway: 10.66.0.1
+```
+### Sora_Robo_AZK 
+```
+Dekstop IP Configuration
+IP Address: 10.66.0.4
+Subnet Mask: 255.255.248.0
+Gateway: 10.66.0.1
+```
+
