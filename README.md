@@ -1270,3 +1270,71 @@ ip address 10.66.19.82 255.255.255.252
 no shutdown
 ```
 
+### Subnet A16
+### Holo-EN
+```
+enable
+configure terminal
+interface fa1/0
+ip address 10.66.19.85 255.255.255.252
+no shutdown
+```
+### HoloAdvent
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.86 255.255.255.252
+no shutdown
+```
+
+### Subnet A17
+### HoloAdvent
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.1 255.255.255.224
+no shutdown
+```
+### FuwaMoco
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.2
+Subnet Mask: 255.255.255.224
+Gateway: 10.66.19.1
+```
+### Shiori_Nerissa
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.3
+Subnet Mask: 255.255.255.224
+Gateway: 10.66.19.1
+```
+### Biboo
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.4
+Subnet Mask: 255.255.255.224
+Gateway: 10.66.19.1
+```
+
+### Subnet A18
+### Holo-EN
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.89 255.255.255.252
+no shutdown
+```
+### Holo-Myth
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.90 255.255.255.252
+no shutdown
+```
+
+
