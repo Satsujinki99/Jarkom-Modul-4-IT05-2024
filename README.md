@@ -1261,7 +1261,7 @@ interface fa0/1
 ip address 10.66.19.81 255.255.255.252
 no shutdown
 ```
-### Hololive
+### Holo-EN
 ```
 enable
 configure terminal
