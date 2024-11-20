@@ -1386,3 +1386,45 @@ interface fa0/0
 ip address 10.66.19.51 255.255.255.248
 no shutdown
 ```
+
+### Subnet A21
+### Router4
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.19.57 255.255.255.248
+no shutdown
+```
+### Kiara_Calli
+```
+Dekstop IP Configuration
+IP Address: 10.66.19.58
+Subnet Mask: 255.255.255.248
+Gateway: 10.66.19.57
+```
+
+### Subnet A22
+### Holo-Council
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.18.129 255.255.255.192
+no shutdown
+```
+### Kiara_Calli
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.130
+Subnet Mask: 255.255.255.192
+Gateway: 10.66.18.129
+```
+### Bae_Fauna
+```
+Dekstop IP Configuration
+IP Address: 10.66.18.131
+Subnet Mask: 255.255.255.192
+Gateway: 10.66.18.129
+```
+
