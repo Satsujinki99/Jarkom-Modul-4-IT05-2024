@@ -864,6 +864,14 @@ post-up route add -net 10.67.2.128 netmask 255.255.255.252 gw 10.67.16.2 #A2
 post-up route add -net 10.67.2.0 netmask 255.255.255.192 gw 10.67.16.2 #A1
 post-up route add -net 10.67.8.32 netmask 255.255.255.252 gw 10.67.16.2 #A7
 post-up route add -net 10.67.8.0 netmask 255.255.255.224 gw 10.67.16.2 #A4
+
+#BAWAH
+post-up route add -net 10.66.32.0 netmask 255.255.255.248 gw 10.66.64.2 #A17
+post-up route add -net 10.66.16.0 netmask 255.255.255.240 gw 10.66.64.2 #A18
+post-up route add -net 10.66.0.0 netmask 255.255.248.0 gw 10.66.64.2 #A19
+post-up route add -net 10.66.8.0 netmask 255.255.254.0 gw 10.66.64.2 #A20
+post-up route add -net 10.66.10.128 netmask 255.255.255.252 gw 10.66.64.2 #A21
+post-up route add -net 10.66.10.0 netmask 255.255.255.128 gw 10.66.64.2 #A22
 ```
 #### Holo-EN
 ```
@@ -889,8 +897,35 @@ post-up route add -net 10.67.0.0 netmask 255.255.254.0 gw 10.67.2.129 #A6
 ```
 post-up route add -net 10.67.16.0 netmask 255.255.255.252 gw 10.67.8.33 #A8
 ```
-
-
+#### Holo-JP
+```
+post-up route add -net 10.66.16.0 netmask 255.255.255.240 gw 10.66.32.2 #A18
+post-up route add -net 10.66.0.0 netmask 255.255.248.0 gw 10.66.32.3 #A19
+post-up route add -net 10.66.8.0 netmask 255.255.254.0 gw 10.66.32.3 #A20
+post-up route add -net 10.66.10.128 netmask 255.255.255.252 gw 10.66.32.3 #A21
+post-up route add -net 10.66.10.0 netmask 255.255.255.128 gw 10.66.32.3 #A22
+```
+#### DEV_IS
+```
+post-up route add -net 10.66.64.0 netmask 255.255.255.252 gw 10.66.32.1 #A9
+```
+#### GEN:0
+```
+post-up route add -net 10.66.64.0 netmask 255.255.255.252 gw 10.66.32.1 #A9
+post-up route add -net 10.66.8.0 netmask 255.255.254.0 gw 10.66.0.4 #A20
+post-up route add -net 10.66.10.128 netmask 255.255.255.252 gw 10.66.0.4 #A21
+post-up route add -net 10.66.10.0 netmask 255.255.255.128 gw 10.66.0.4 #A22
+```
+#### GEN:1
+```
+post-up route add -net 10.66.10.0 netmask 255.255.255.128 gw 10.66.10.130 #A22
+```
+#### GAMERS
+```
+post-up route add -net 10.66.64.0 netmask 255.255.255.252 gw 10.66.10.129 #A9
+post-up route add -net 10.66.32.0 netmask 255.255.255.248 gw 10.66.10.129 #A17
+post-up route add -net 10.66.0.0 netmask 255.255.248.0 gw 10.66.10.129 #A19
+```
 
 
 ## CPT (VLSM)
