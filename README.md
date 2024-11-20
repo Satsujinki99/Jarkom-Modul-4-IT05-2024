@@ -1411,14 +1411,14 @@ no shutdown
 Dekstop IP Configuration
 IP Address: 10.66.14.2
 Subnet Mask: 255.255.254.0
-Gateway: 10.66.14.2
+Gateway: 10.66.14.1
 ```
 ### Aki_Hachama
 ```
 Dekstop IP Configuration
 IP Address: 10.66.14.3
 Subnet Mask: 255.255.254.0
-Gateway: 10.66.14.2
+Gateway: 10.66.14.1
 ```
 
 ### Subnet A13
