@@ -851,6 +851,163 @@ iface eth0 inet static
     netmask 255.255.255.128
     gateway 10.66.10.1
 ```
+#### Holo-ID
+```
+auto lo
+iface lo inet loopback
+
+#A10
+auto eth0
+iface eth0 inet static
+    address 10.66.160.2
+    netmask 255.255.255.252
+    gateway 10.66.160.1
+
+#A11
+auto eth1
+iface eth1 inet static
+    address 10.66.132.1
+    netmask 255.255.255.252
+
+#A12
+auto eth2
+iface eth2 inet static
+    address 10.66.144.65
+    netmask 255.255.255.252
+
+#A13
+auto eth2
+iface eth2 inet static
+    address 10.66.138.1
+    netmask 255.255.255.252
+```
+#### AREA15
+```
+auto lo
+iface lo inet loopback
+
+#A11
+auto eth0
+iface eth0 inet static
+    address 10.66.132.2
+    netmask 255.255.255.252
+    gateway 10.66.132.1
+
+#A14
+auto eth1
+iface eth1 inet static
+    address 10.66.128.1
+    netmask 255.255.252.0
+```
+#### Risu
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.128.2
+    netmask 255.255.252.0
+    gateway 10.66.128.1
+```
+#### Moona
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.128.3
+    netmask 255.255.252.0
+    gateway 10.66.128.1
+```
+#### Lofi
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.128.4
+    netmask 255.255.252.0
+    gateway 10.66.128.1
+```
+#### Holoro
+```
+auto lo
+iface lo inet loopback
+
+#A12
+auto eth0
+iface eth0 inet static
+    address 10.66.144.66
+    netmask 255.255.255.252
+    gateway 10.66.144.66
+
+#A15
+auto eth1
+iface eth1 inet static
+    address 10.66.144.1
+    netmask 255.255.255.192
+```
+#### Ollie
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.144.2
+    netmask 255.255.255.192
+    gateway 10.66.144.1
+```
+#### Anya
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.144.3
+    netmask 255.255.255.192
+    gateway 10.66.144.1
+```
+#### Reine
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.144.4
+    netmask 255.255.255.192
+    gateway 10.66.144.1
+```
+
+#### Holoh3ro
+```
+auto lo
+iface lo inet loopback
+
+#A13
+auto eth0
+iface eth0 inet static
+    address 10.66.138.2
+    netmask 255.255.255.252
+    gateway 10.66.138.1
+
+#A16
+auto eth1
+iface eth1 inet static
+    address 10.66.136.1
+    netmask 255.255.254.0
+```
+#### Zeta
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.136.2
+    netmask 255.255.254.0
+    gateway 10.66.136.1
+```
+#### Kaela
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.136.3
+    netmask 255.255.254.0
+    gateway 10.66.136.1
+```
+#### Kobo
+```
+auto eth0
+iface eth0 inet static
+    address 10.66.136.4
+    netmask 255.255.254.0
+    gateway 10.66.136.1
+```
 
 ### Routing
 #### Hololive
@@ -872,6 +1029,14 @@ post-up route add -net 10.66.0.0 netmask 255.255.248.0 gw 10.66.64.2 #A19
 post-up route add -net 10.66.8.0 netmask 255.255.254.0 gw 10.66.64.2 #A20
 post-up route add -net 10.66.10.128 netmask 255.255.255.252 gw 10.66.64.2 #A21
 post-up route add -net 10.66.10.0 netmask 255.255.255.128 gw 10.66.64.2 #A22
+
+#KANAN
+post-up route add -net 10.66.132.0 netmask 255.255.255.252 gw 10.66.160.2 #A11
+post-up route add -net 10.66.144.64 netmask 255.255.255.252 gw 10.66.160.2 #A12
+post-up route add -net 10.66.138.0 netmask 255.255.255.252 gw 10.66.160.2 #A13
+post-up route add -net 10.66.128.0 netmask 255.255.252.0 gw 10.66.160.2 #A14
+post-up route add -net 10.66.144.0 netmask 255.255.255.192 gw 10.66.160.2 #A15
+post-up route add -net 10.66.136.0 netmask 255.255.254.0 gw 10.66.160.2 #A16
 ```
 #### Holo-EN
 ```
@@ -925,6 +1090,24 @@ post-up route add -net 10.66.10.0 netmask 255.255.255.128 gw 10.66.10.130 #A22
 post-up route add -net 10.66.64.0 netmask 255.255.255.252 gw 10.66.10.129 #A9
 post-up route add -net 10.66.32.0 netmask 255.255.255.248 gw 10.66.10.129 #A17
 post-up route add -net 10.66.0.0 netmask 255.255.248.0 gw 10.66.10.129 #A19
+```
+#### Holo-ID
+```
+post-up route add -net 10.66.128.0 netmask 255.255.252.0 gw 10.66.132.2 #A14
+post-up route add -net 10.66.144.0 netmask 255.255.255.192 gw 10.66.144.66 #A15
+post-up route add -net 10.66.136.0 netmask 255.255.254.0 gw 10.66.138.2 #A16
+```
+#### AREA15
+```
+post-up route add -net 10.66.160.0 netmask 255.255.255.252 gw 10.66.132.1 #A10
+```
+#### Holoro
+```
+post-up route add -net 10.66.160.0 netmask 255.255.255.252 gw 10.66.144.65 #A10
+```
+#### Holoh3ro
+```
+post-up route add -net 10.66.160.0 netmask 255.255.255.252 gw 10.66.138.1 #A10
 ```
 
 
