@@ -1337,4 +1337,52 @@ ip address 10.66.19.90 255.255.255.252
 no shutdown
 ```
 
+### Subnet A19
+### Holo-Myth
+```
+enable
+configure terminal
+interface fa0/1
+ip address 10.66.12.1 255.255.254.0
+no shutdown
+```
+### Gura_Ame_Ina
+```
+Dekstop IP Configuration
+IP Address: 10.66.12.2
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.12.1
+```
+### Kiara_Calli
+```
+Dekstop IP Configuration
+IP Address: 10.66.12.3
+Subnet Mask: 255.255.254.0
+Gateway: 10.66.12.1
+```
 
+### Subnet A20
+### Holo-Myth
+```
+enable
+configure terminal
+interface fa1/0
+ip address 10.66.19.49 255.255.255.248
+no shutdown
+```
+### Router4
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.50 255.255.255.248
+no shutdown
+```
+### Holo-Council
+```
+enable
+configure terminal
+interface fa0/0
+ip address 10.66.19.51 255.255.255.248
+no shutdown
+```
